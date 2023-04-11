@@ -1,0 +1,11 @@
+## all ignore ##
+*
+.**
+
+## White list in the home directory ##
+!.gitignore
+
+!.tmux.conf
+!.config
+!.config/
+!.config/*/

@@ -1,0 +1,7 @@
+## White list in .config ##
+
+!nvim
+!nvim/*
+
+!fish
+!fish/config.fish
