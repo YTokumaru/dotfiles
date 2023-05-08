@@ -5,6 +5,7 @@
 ## White list in the home directory ##
 !.gitignore
 
+!.zshrc
 !.tmux.conf
 !.config
 !.config/

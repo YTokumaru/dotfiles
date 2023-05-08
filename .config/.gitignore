@@ -3,5 +3,8 @@
 !nvim
 !nvim/*
 
-!fish
-!fish/config.fish
+!powerline-shell
+!powerline-shell/*
+!powerline-shell/themes
+!powerline-shell/themes/*
+

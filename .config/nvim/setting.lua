@@ -45,7 +45,6 @@ M.languages = {
         "python",
         "regex",
         "vim",
-        "help",
         "markdown",
 }
 
