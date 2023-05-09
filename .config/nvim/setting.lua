@@ -17,11 +17,12 @@ M.servers = {
         "clangd",
         "cmake",
         "fortls",
-        "jsonls",
-        "ltex",
+--        "jsonls",
+--        "ltex",
         "marksman",
         "pyright",
         "bashls",
+        "texlab"
 }
 
 -- list of external packages to install with mason
@@ -36,7 +37,8 @@ M.languages = {
         "cmake",
         "comment",
         "cuda",
-        "latex",
+        -- vimtex will take care of latex
+        -- "latex",
         "make",
         "html",
         "javascript",

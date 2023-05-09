@@ -20,3 +20,5 @@ require("telescope_conf")
 require("aerial_conf")
 require("tree-sitter_conf")
 require("luasnip_conf")
+local vimtex_conf = vim.fn.stdpath("config") .. "/lua/vimtex_conf.vim"
+vim.cmd.source(vimtex_conf)

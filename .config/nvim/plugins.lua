@@ -55,7 +55,7 @@ require('packer').startup(function()
     -- Snippets/cmp source
     use {
         "rafamadriz/friendly-snippets",
-        "honza/vim-snippets",
+        --"honza/vim-snippets",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path"
     }
@@ -122,6 +122,9 @@ require('packer').startup(function()
         require("copilot").setup({
             suggestion = { enabled = false },
             panel = { enabled = false },
+            filetypes = {
+                markdown = true,
+            }
         })
       end,
     }
@@ -145,6 +148,9 @@ require('packer').startup(function()
     use {
         "rstacruz/vim-closer"
     }
+
+    --vimTeX
+    use 'lervag/vimtex'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

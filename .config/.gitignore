@@ -2,6 +2,9 @@
 
 !nvim
 !nvim/*
+!nvim/lua
+!nvim/lua/*
+nvim/lua/.luarc.json
 
 !powerline-shell
 !powerline-shell/*
