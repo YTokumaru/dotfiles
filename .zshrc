@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+path+=("/usr/local/texlive/2023/bin/x86_64-linux/")
 export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.

@@ -6,6 +6,7 @@ These are the list of dependencies the dotfiles require. The versions listed are
 * tmux 3.X 
 * nvim 0.9.X
 * powerline-shell
+* zathura and its pdf extension
 
 Note that Nvim has additional dependencies.
 * node.js 16.X (for copilot)

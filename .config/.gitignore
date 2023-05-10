@@ -4,10 +4,12 @@
 !nvim/*
 !nvim/lua
 !nvim/lua/*
+nvim/plugin
+nvim/plugin/*
 nvim/lua/.luarc.json
 
 !powerline-shell
 !powerline-shell/*
 !powerline-shell/themes
 !powerline-shell/themes/*
-
+powerline-shell/themes/*.pyc
