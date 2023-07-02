@@ -5,16 +5,26 @@ log_file=~/install_progress_log.txt
 
 # Installation using apt
 # Package managers
-sudo apt install -y npm python3-pip
+sudo apt install -y npm python3-pip snapd
 # Shell
 sudo apt install -y zsh tmux
 sudo pip3 install powerline-shell
+# Editor
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt install -y nodejs
+sudo snap install --beta nvim --classic
 # Latex
 sudo apt install -y texlive-full
 # Development
 sudo apt install -y git gcc g++ gfortran clang gdb cmake python3 python3-venv python3-dev
 
 # Installation check
+if type -p snap > /dev/null; then
+    echo "snap Installed" >> $log_file
+else
+    echo "snap FAILED TO INSTALL!!!" >> $log_file
+fi
+
 if type -p npm > /dev/null; then
     echo "npm Installed" >> $log_file
 else
