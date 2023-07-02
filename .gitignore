@@ -5,10 +5,12 @@
 ## White list in the home directory ##
 !.gitignore
 
+!README.md
+!.latexmkrc
 !.zshrc
 !.tmux.conf
 !.config
 !.config/
 !.config/*/
-!dotfile_manager
-!dotfile_manager/*
+!install/
+!install/*
