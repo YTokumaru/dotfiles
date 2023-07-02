@@ -5,7 +5,7 @@ log_file=~/install_progress_log.txt
 
 # Installation using apt
 # Package managers
-sudo apt install -y npm python-pip3
+sudo apt install -y npm python3-pip
 # Shell
 sudo apt install -y zsh tmux
 sudo pip3 install powerline-shell

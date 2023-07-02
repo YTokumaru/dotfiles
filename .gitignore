@@ -6,11 +6,11 @@
 !.gitignore
 
 !README.md
-!.latexmkrc
-!.zshrc
-!.tmux.conf
-!.config
-!.config/
-!.config/*/
+!latexmkrc
+!zshrc
+!tmux.conf
+!config
+!config/
+!config/*/
 !install/
 !install/*
