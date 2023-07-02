@@ -5,11 +5,11 @@
 dotfiles_dir=~/dotfiles
 
 # Back up the existing dotfiles
-mkdir -p ~/backup
-mv ~/.zshrc ~/backup
-mv ~/.tmux.conf ~/backup
-mv ~/.config ~/backup
-mv ~/.latexmkrc ~/backup
+mkdir -p $dotfiles/backup
+mv ~/.zshrc $dotfiles/backup
+mv ~/.tmux.conf $dotfiles/backup
+mv ~/.config $dotfiles/backup
+mv ~/.latexmkrc $dotfiles/backup
 
 # Create the symbolic links
 ln -s $dotfiles_dir/zshrc ~/.zshrc
