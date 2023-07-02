@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 path+=("/usr/local/texlive/2023/bin/x86_64-linux/")
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$PATH:/snap/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
