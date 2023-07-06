@@ -3,9 +3,12 @@
 # This file installes all the required dependenies:
 log_file=~/install_progress_log.txt
 
+sudo apt update
+sudo apt upgrade
 # Installation using apt
 # Package managers
-sudo apt install -y npm python3-pip snapd
+sudo apt install -y python3-pip
+sudo apt install -y snapd
 # Shell
 sudo apt install -y zsh tmux
 sudo pip3 install powerline-shell
