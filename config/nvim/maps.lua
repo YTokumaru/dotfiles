@@ -10,7 +10,7 @@ function M.mapAerialKey(bufnr)
 end
 
 -- Toggle neotree
-vim.keymap.set('n', '<C-b>', '<cmd>NvimTreeToggle<cr>' )
+vim.keymap.set('n', '<F3>', '<cmd>NvimTreeToggle<cr>' )
 
 --
 vim.keymap.set('i', 'jk', '<ESC>')
