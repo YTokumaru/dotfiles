@@ -111,6 +111,7 @@ if type -p python3 > /dev/null; then
 else
     echo "python3 FAILED TO INSTALL!!!" >> $log_file
 fi
+<<<<<<< HEAD
 
 if type -p cppcheck > /dev/null; then
     echo "cppcheck Installed" >> $log_file
@@ -123,3 +124,5 @@ if type -p ccache > /dev/null; then
 else
     echo "ccache FAILED TO INSTALL!!!" >> $log_file
 fi
+=======
+>>>>>>> e5388c13564c29523f12e493bd0b4ca65c788b1a
