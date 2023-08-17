@@ -19,7 +19,7 @@ sudo snap install --beta nvim --classic
 # Latex
 sudo apt install -y texlive-full
 # Development
-sudo apt install -y git gcc g++ gfortran clang gdb cmake python3 python3-venv python3-dev
+sudo apt install -y git gcc g++ gfortran clang gdb cmake python3 python3-venv python3-dev cppcheck ccache doxygen graphviz ninja-build clang-tidy
 
 # Installation check
 if type -p snap > /dev/null; then
@@ -110,4 +110,16 @@ if type -p python3 > /dev/null; then
     echo "python3 Installed" >> $log_file
 else
     echo "python3 FAILED TO INSTALL!!!" >> $log_file
+fi
+
+if type -p cppcheck > /dev/null; then
+    echo "cppcheck Installed" >> $log_file
+else
+    echo "cppcheck FAILED TO INSTALL!!!" >> $log_file
+fi
+
+if type -p ccache > /dev/null; then
+    echo "ccache Installed" >> $log_file
+else
+    echo "ccache FAILED TO INSTALL!!!" >> $log_file
 fi
