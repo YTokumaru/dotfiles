@@ -3,123 +3,49 @@
 # This file installes all the required dependenies:
 log_file=~/install_progress_log.txt
 
+apt_install=(
+    zsh
+    tmux
+    snapd
+    unzip
+    git
+    gcc
+    g++
+    gfortran
+    clang
+    gdb
+    cmake
+    python3
+    python3-venv
+    python3-pip
+    python3-dev
+    cppcheck
+    ccache
+    doxygen
+    graphviz
+    ninja-build
+    clang-tidy
+    texlive-full
+    ripgrep
+    )
+
+pip3_install=(
+    powerline-shell
+    )
+
+# Installation using apt
 sudo apt update
 sudo apt upgrade
-# Installation using apt
+sudo apt install -y ${apt_install[@]}
+
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.zshrc
+# install version 18.x
+nvm install 18
+
 # Package managers
-sudo apt install -y python3-pip
-sudo apt install -y snapd
-# Shell
-sudo apt install -y zsh tmux
-sudo pip3 install powerline-shell
-# Editor
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
-sudo apt install -y nodejs
+pip3 --user install ${pip3_install[@]} 
+
+# Install neovim
 sudo snap install --beta nvim --classic
-# Latex
-sudo apt install -y texlive-full
-# Development
-sudo apt install -y git gcc g++ gfortran clang gdb cmake python3 python3-venv python3-dev cppcheck ccache doxygen graphviz ninja-build clang-tidy
-
-# Installation check
-if type -p snap > /dev/null; then
-    echo "snap Installed" >> $log_file
-else
-    echo "snap FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p npm > /dev/null; then
-    echo "npm Installed" >> $log_file
-else
-    echo "npm FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p pip3 > /dev/null; then
-    echo "pip3 Installed" >> $log_file
-else
-    echo "pip3 FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p zsh > /dev/null; then
-    echo "zsh Installed" >> $log_file
-else
-    echo "zsh FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p tmux > /dev/null; then
-    echo "tmux Installed" >> $log_file
-else
-    echo "tmux FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if python3 -c "import powerline-shell" &> /dev/null; then
-    echo "powerline-shell installed" >> $log_file
-else
-    echo "powerline-shell FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p pdflatex > /dev/null; then
-    echo "texlive Installed" >> $log_file
-else
-    echo "texlive FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p git > /dev/null; then
-    echo "git Installed" >> $log_file
-else
-    echo "git FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p gcc > /dev/null; then
-    echo "gcc Installed" >> $log_file
-else
-    echo "gcc FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p g++ > /dev/null; then
-    echo "g++ Installed" >> $log_file
-else
-    echo "g++ FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p gfortran > /dev/null; then
-    echo "gfortran Installed" >> $log_file
-else
-    echo "gfortran FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p clang > /dev/null; then
-    echo "clang Installed" >> $log_file
-else
-    echo "clang FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p gdb > /dev/null; then
-    echo "gdb Installed" >> $log_file
-else
-    echo "gdb FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p cmake > /dev/null; then
-    echo "cmake Installed" >> $log_file
-else
-    echo "cmake FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p python3 > /dev/null; then
-    echo "python3 Installed" >> $log_file
-else
-    echo "python3 FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p cppcheck > /dev/null; then
-    echo "cppcheck Installed" >> $log_file
-else
-    echo "cppcheck FAILED TO INSTALL!!!" >> $log_file
-fi
-
-if type -p ccache > /dev/null; then
-    echo "ccache Installed" >> $log_file
-else
-    echo "ccache FAILED TO INSTALL!!!" >> $log_file
-fi
