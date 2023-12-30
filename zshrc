@@ -95,6 +95,10 @@ fi
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+#
+# Install Ruby Gems to ~/.gems
+export GEM_HOME="$HOME/.gems"
+export PATH="$HOME/.gems/bin:$PATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -105,6 +109,10 @@ fi
 # else
 #   export EDITOR='mvim'
 # fi
+
+# Preferred compilers
+export CC='/usr/bin/clang'
+export CXX='/usr/bin/clang++'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -117,6 +125,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/spack/share/spack/setup-env.sh
 alias ls='ls -GF --color=auto'
 alias ll='ls -lGF --color=auto'
 alias la='ls -alGF --color=auto'
